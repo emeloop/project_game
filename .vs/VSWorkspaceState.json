@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\project_game"
+    "\\project_game",
+    "\\project_game\\EveWata",
+    "\\project_game\\EveWata\\Properties"
   ],
-  "SelectedNode": "\\project_game",
+  "SelectedNode": "\\project_game\\EveWata\\EveWata.sln",
   "PreviewInSolutionExplorer": false
 }

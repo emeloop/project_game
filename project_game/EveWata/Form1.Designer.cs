@@ -28,59 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.mainControlPanel = new EveWata.mainControlPanel();
+            this.userControl11 = new EveWata.settingControlPanel();
             this.SuspendLayout();
             // 
-            // button1
+            // panel1
             // 
-            this.button1.Location = new System.Drawing.Point(486, 269);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "開始";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1732, 900);
+            this.panel1.TabIndex = 2;
             // 
-            // button2
+            // mainControlPanel
             // 
-            this.button2.Location = new System.Drawing.Point(486, 353);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(207, 36);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "終了";
-            this.button2.UseVisualStyleBackColor = true;
+            this.mainControlPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.mainControlPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainControlPanel.Margin = new System.Windows.Forms.Padding(15, 12, 15, 12);
+            this.mainControlPanel.Name = "mainControlPanel";
+            this.mainControlPanel.Size = new System.Drawing.Size(1127, 568);
+            this.mainControlPanel.TabIndex = 0;
+            this.mainControlPanel.Load += new System.EventHandler(this.mainControl1_Load);
             // 
-            // button3
+            // userControl11
             // 
-            this.button3.Location = new System.Drawing.Point(486, 311);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(207, 36);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "設定";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.userControl11.Location = new System.Drawing.Point(0, 0);
+            this.userControl11.Margin = new System.Windows.Forms.Padding(15, 12, 15, 12);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(1040, 566);
+            this.userControl11.TabIndex = 1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1733, 900);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.mainControlPanel);
+            this.Controls.Add(this.userControl11);
+            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private mainControlPanel mainControlPanel;
+        private settingControlPanel userControl11;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
