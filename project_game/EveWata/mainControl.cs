@@ -24,7 +24,9 @@ namespace EveWata
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form1.mainControl.Visible = false;
+            Form1.gameControl.Visible = true;
+            Form1.gameControl.Dock = DockStyle.Fill;
         }
 
         private void button2_Click(object sender, EventArgs e)

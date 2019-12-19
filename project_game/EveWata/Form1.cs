@@ -14,6 +14,8 @@ namespace EveWata
     {
         public static mainControlPanel mainControl;
         public static settingControlPanel settingControl;
+        public static gameControl gameControl;
+          
 
         public Form1()
         {
@@ -21,12 +23,15 @@ namespace EveWata
 
             mainControl = new mainControlPanel();
             settingControl = new settingControlPanel();
+            gameControl = new gameControl();
 
             panel1.Controls.Add(mainControl);
             panel1.Controls.Add(settingControl);
+            panel1.Controls.Add(gameControl);
 
             mainControl.Visible = true;
             settingControl.Visible = false;
+            gameControl.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
