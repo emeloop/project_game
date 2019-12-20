@@ -15,6 +15,7 @@ namespace EveWata
         public gameControl()
         {
             InitializeComponent();
+            
         }
 
         private void gameSceneControl_Load(object sender, EventArgs e)
@@ -27,6 +28,16 @@ namespace EveWata
             Form1.gameControl.Visible = false;
             Form1.mainControl.Visible = true;
             Form1.mainControl.Dock = DockStyle.Fill;
+        }
+
+        private void testString_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backGroundPicture_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

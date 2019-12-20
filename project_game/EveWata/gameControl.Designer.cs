@@ -40,6 +40,7 @@
             this.testString.Size = new System.Drawing.Size(118, 24);
             this.testString.TabIndex = 0;
             this.testString.Text = "ゲーム画面";
+            this.testString.Click += new System.EventHandler(this.testString_Click);
             // 
             // button1
             // 
@@ -55,6 +56,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EveWata.Properties.Resources.backGroundImage;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.testString);
             this.Name = "gameControl";
